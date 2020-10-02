@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Tic Tac Toe</title>
+	<title>Tic Tac Toe Game In JavaScript</title>
 	<style type="text/css">
 		body{
 			margin: 0;
@@ -85,16 +85,15 @@
 	var btn7 = document.getElementById('btn7');
 	var btn8 = document.getElementById('btn8');
 	var btn9 = document.getElementById('btn9');
-	function WinnerBox(b1,b2,b3){
-		b1.style.background = color;
-		b2.style.background = color;
-		b3.style.background = color;
-		turn.innerHTML = b1.innerHTML + " Won Congratulation";
+	function WinnerBox(btn1,btn2,btn3){
+		btn1.style.background = color;
+		btn2.style.background = color;
+		btn3.style.background = color;
+		turn.innerHTML = btn1.innerHTML + " Won Congratulation!!";
 	}
 	
 	function ChooseWinner(){
-
-	//All Posibilities To Win Game
+		//All Posibilities To Win Game
 		if(btn1.innerHTML !== "" && btn1.innerHTML === btn2.innerHTML && btn1.innerHTML === btn3.innerHTML){
 			WinnerBox(btn1,btn2,btn3);
 		}
